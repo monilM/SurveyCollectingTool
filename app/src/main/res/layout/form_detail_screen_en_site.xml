@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <!-- Title Bar -->
+
+    <RelativeLayout
+        android:id="@+id/login_titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D41823" >
+
+        <ImageButton
+            android:id="@+id/login_titleBarButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/app_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:text="@string/airtel_survey"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/login_titleBar"
+        android:fillViewport="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+    android:id="@+id/txt_site"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+
+    android:text="@string/txt_site"
+    android:textColor="@android:color/black"
+    android:background="@color/titleBackgroundColor"
+    android:paddingTop="@dimen/titleTextTopPadding"
+    android:paddingBottom="@dimen/titleTextBottomPadding"
+    android:textSize="@dimen/titleTextSize" />
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@id/txt_site"
+android:orientation="vertical"
+android:layout_marginTop="@dimen/questLayoutMarginTop"
+android:id="@+id/site_quest_layout_1">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/site_quest_layout_one">
+
+    <TextView
+        android:id="@+id/site_txt_quest_no_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="@dimen/questNoMarginLeft"
+        android:text="1"/>
+
+    <TextView
+        android:id="@+id/site_txt_question_desc_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/txtQuestionMarginLeft"
+        android:text="@string/txt_site_q1"
+        android:layout_centerVertical="true"
+        android:textColor="@android:color/black"
+        android:layout_toLeftOf="@+id/site_rdo_grp_1"
+        android:layout_toRightOf="@+id/site_txt_quest_no_1"/>
+
+    <RadioGroup
+        android:id="@+id/site_rdo_grp_1"
+
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        android:gravity="end"
+        android:layout_marginRight="@dimen/radioGroupMarginRight"
+        android:layout_height="wrap_content">
+
+        <RadioButton android:layout_width="wrap_content"
+            android:id="@+id/site_rdobtn_yes_1" android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="Yes"></RadioButton>
+        <RadioButton android:id="@+id/site_rdobtn_no_1"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="No"></RadioButton>
+    </RadioGroup>
+</RelativeLayout>
+<EditText
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/CommentEditTextMarginTop"
+    android:id="@+id/site_comment_1"
+    android:layout_below="@+id/site_quest_layout_one"
+    android:hint="Comment"/>
+</LinearLayout>
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@id/site_quest_layout_1"
+android:orientation="vertical"
+android:layout_marginTop="@dimen/questLayoutMarginTop"
+android:id="@+id/site_quest_layout_2">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/site_quest_layout_two">
+
+    <TextView
+        android:id="@+id/site_txt_quest_no_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="@dimen/questNoMarginLeft"
+        android:text="2"/>
+
+    <TextView
+        android:id="@+id/site_txt_question_desc_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/txtQuestionMarginLeft"
+        android:text="@string/txt_site_q2"
+        android:layout_centerVertical="true"
+        android:textColor="@android:color/black"
+        android:layout_toLeftOf="@+id/site_rdo_grp_2"
+        android:layout_toRightOf="@+id/site_txt_quest_no_2"/>
+
+    <RadioGroup
+        android:id="@+id/site_rdo_grp_2"
+
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        android:gravity="end"
+        android:layout_marginRight="@dimen/radioGroupMarginRight"
+        android:layout_height="wrap_content">
+
+        <RadioButton android:layout_width="wrap_content"
+            android:id="@+id/site_rdobtn_yes_2" android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="Yes"></RadioButton>
+        <RadioButton android:id="@+id/site_rdobtn_no_2"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="No"></RadioButton>
+    </RadioGroup>
+</RelativeLayout>
+<EditText
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/CommentEditTextMarginTop"
+    android:id="@+id/site_comment_2"
+    android:layout_below="@+id/site_quest_layout_two"
+    android:hint="Comment"/>
+</LinearLayout>
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@id/site_quest_layout_2"
+android:orientation="vertical"
+android:layout_marginTop="@dimen/questLayoutMarginTop"
+android:id="@+id/site_quest_layout_3">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/site_quest_layout_three">
+
+    <TextView
+        android:id="@+id/site_txt_quest_no_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="@dimen/questNoMarginLeft"
+        android:text="3"/>
+
+    <TextView
+        android:id="@+id/site_txt_question_desc_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/txtQuestionMarginLeft"
+        android:layout_toLeftOf="@+id/site_rdo_grp_3"
+        android:text="@string/txt_site_q3"
+        android:layout_centerVertical="true"
+        android:textColor="@android:color/black"
+        android:layout_toRightOf="@+id/site_txt_quest_no_3"/>
+
+    <RadioGroup
+        android:id="@+id/site_rdo_grp_3"
+
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        android:gravity="end"
+        android:layout_marginRight="@dimen/radioGroupMarginRight"
+        android:layout_height="wrap_content">
+
+        <RadioButton android:layout_width="wrap_content"
+            android:id="@+id/site_rdobtn_yes_3" android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="Yes"></RadioButton>
+        <RadioButton android:id="@+id/site_rdobtn_no_3"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="No"></RadioButton>
+    </RadioGroup>
+</RelativeLayout>
+<EditText
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/CommentEditTextMarginTop"
+    android:id="@+id/site_comment_3"
+    android:layout_below="@+id/site_quest_layout_three"
+    android:hint="Comment"/>
+</LinearLayout>
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@id/site_quest_layout_3"
+android:orientation="vertical"
+android:layout_marginTop="@dimen/questLayoutMarginTop"
+android:id="@+id/site_quest_layout_4">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/site_quest_layout_four">
+
+    <TextView
+        android:id="@+id/site_txt_quest_no_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="@dimen/questNoMarginLeft"
+        android:text="4"/>
+
+    <TextView
+        android:id="@+id/site_txt_question_desc_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/txtQuestionMarginLeft"
+        android:text="@string/txt_site_q4"
+        android:layout_centerVertical="true"
+        android:textColor="@android:color/black"
+        android:layout_toLeftOf="@+id/site_rdo_grp_4"
+        android:layout_toRightOf="@+id/site_txt_quest_no_4"/>
+
+    <RadioGroup
+        android:id="@+id/site_rdo_grp_4"
+
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        android:gravity="end"
+        android:layout_marginRight="@dimen/radioGroupMarginRight"
+        android:layout_height="wrap_content">
+
+        <RadioButton android:layout_width="wrap_content"
+            android:id="@+id/site_rdobtn_yes_4" android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="Yes"></RadioButton>
+        <RadioButton android:id="@+id/site_rdobtn_no_4"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="No"></RadioButton>
+    </RadioGroup>
+</RelativeLayout>
+<EditText
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/CommentEditTextMarginTop"
+    android:id="@+id/site_comment_4"
+    android:layout_below="@+id/site_quest_layout_four"
+    android:hint="Comment"/>
+</LinearLayout>
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@id/site_quest_layout_4"
+android:orientation="vertical"
+android:layout_marginTop="@dimen/questLayoutMarginTop"
+android:id="@+id/site_quest_layout_5">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/site_quest_layout_five">
+
+    <TextView
+        android:id="@+id/site_txt_quest_no_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="@dimen/questNoMarginLeft"
+        android:text="5"/>
+
+    <TextView
+        android:id="@+id/site_txt_question_desc_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/txtQuestionMarginLeft"
+        android:text="@string/txt_site_q5"
+        android:layout_centerVertical="true"
+        android:textColor="@android:color/black"
+        android:layout_toLeftOf="@+id/site_rdo_grp_5"
+        android:layout_toRightOf="@+id/site_txt_quest_no_5"/>
+
+    <RadioGroup
+        android:id="@+id/site_rdo_grp_5"
+
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        android:gravity="end"
+        android:layout_marginRight="@dimen/radioGroupMarginRight"
+        android:layout_height="wrap_content">
+
+        <RadioButton android:layout_width="wrap_content"
+            android:id="@+id/site_rdobtn_yes_5" android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="Yes"></RadioButton>
+        <RadioButton android:id="@+id/site_rdobtn_no_5"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="No"></RadioButton>
+    </RadioGroup>
+</RelativeLayout>
+<EditText
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/CommentEditTextMarginTop"
+    android:id="@+id/site_comment_5"
+    android:layout_below="@+id/site_quest_layout_five"
+    android:hint="Comment"/>
+</LinearLayout>
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@id/site_quest_layout_5"
+android:orientation="vertical"
+android:layout_marginTop="@dimen/questLayoutMarginTop"
+android:id="@+id/site_quest_layout_6">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/site_quest_layout_six">
+
+    <TextView
+        android:id="@+id/site_txt_quest_no_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="@dimen/questNoMarginLeft"
+        android:text="6"/>
+
+    <TextView
+        android:id="@+id/site_txt_question_desc_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/txtQuestionMarginLeft"
+        android:text="@string/txt_site_q6"
+        android:layout_centerVertical="true"
+        android:textColor="@android:color/black"
+        android:layout_toLeftOf="@+id/site_rdo_grp_6"
+        android:layout_toRightOf="@+id/site_txt_quest_no_6"/>
+
+    <RadioGroup
+        android:id="@+id/site_rdo_grp_6"
+
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        android:gravity="end"
+        android:layout_marginRight="@dimen/radioGroupMarginRight"
+        android:layout_height="wrap_content">
+
+        <RadioButton android:layout_width="wrap_content"
+            android:id="@+id/site_rdobtn_yes_6" android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="Yes"></RadioButton>
+        <RadioButton android:id="@+id/site_rdobtn_no_6"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="No"></RadioButton>
+    </RadioGroup>
+</RelativeLayout>
+<EditText
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/CommentEditTextMarginTop"
+    android:id="@+id/site_comment_6"
+    android:layout_below="@+id/site_quest_layout_six"
+    android:hint="Comment"/>
+</LinearLayout>
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@id/site_quest_layout_6"
+android:orientation="vertical"
+android:layout_marginTop="@dimen/questLayoutMarginTop"
+android:id="@+id/site_quest_layout_7">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/site_quest_layout_seven">
+
+    <TextView
+        android:id="@+id/site_txt_quest_no_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="@dimen/questNoMarginLeft"
+        android:text="7"/>
+
+    <TextView
+        android:id="@+id/site_txt_question_desc_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/txtQuestionMarginLeft"
+        android:text="@string/txt_site_q7"
+        android:layout_centerVertical="true"
+        android:textColor="@android:color/black"
+        android:layout_toLeftOf="@+id/site_rdo_grp_7"
+        android:layout_toRightOf="@+id/site_txt_quest_no_7"/>
+
+    <RadioGroup
+        android:id="@+id/site_rdo_grp_7"
+
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        android:gravity="end"
+        android:layout_marginRight="@dimen/radioGroupMarginRight"
+        android:layout_height="wrap_content">
+
+        <RadioButton android:layout_width="wrap_content"
+            android:id="@+id/site_rdobtn_yes_7" android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="Yes"></RadioButton>
+        <RadioButton android:id="@+id/site_rdobtn_no_7"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="No"></RadioButton>
+    </RadioGroup>
+</RelativeLayout>
+<EditText
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/CommentEditTextMarginTop"
+    android:id="@+id/site_comment_7"
+    android:layout_below="@+id/site_quest_layout_seven"
+    android:hint="Comment"/>
+</LinearLayout>
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@id/site_quest_layout_7"
+android:orientation="vertical"
+android:layout_marginTop="@dimen/questLayoutMarginTop"
+android:id="@+id/site_quest_layout_8">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/site_quest_layout_eight">
+
+    <TextView
+        android:id="@+id/site_txt_quest_no_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="@dimen/questNoMarginLeft"
+        android:text="8"/>
+
+    <TextView
+        android:id="@+id/site_txt_question_desc_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/txtQuestionMarginLeft"
+        android:text="@string/txt_site_q8"
+        android:layout_centerVertical="true"
+        android:textColor="@android:color/black"
+        android:layout_toLeftOf="@+id/site_rdo_grp_8"
+        android:layout_toRightOf="@+id/site_txt_quest_no_8"/>
+
+    <RadioGroup
+        android:id="@+id/site_rdo_grp_8"
+
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        android:gravity="end"
+        android:layout_marginRight="@dimen/radioGroupMarginRight"
+        android:layout_height="wrap_content">
+
+        <RadioButton android:layout_width="wrap_content"
+            android:id="@+id/site_rdobtn_yes_8" android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="Yes"></RadioButton>
+        <RadioButton android:id="@+id/site_rdobtn_no_8"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="No"></RadioButton>
+    </RadioGroup>
+</RelativeLayout>
+<EditText
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/CommentEditTextMarginTop"
+    android:id="@+id/site_comment_8"
+    android:layout_below="@+id/site_quest_layout_eight"
+    android:hint="Comment"/>
+</LinearLayout>
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@id/site_quest_layout_8"
+android:orientation="vertical"
+android:layout_marginTop="@dimen/questLayoutMarginTop"
+android:id="@+id/site_quest_layout_9">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/site_quest_layout_nine">
+
+    <TextView
+        android:id="@+id/site_txt_quest_no_9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="@dimen/questNoMarginLeft"
+        android:text="9"/>
+
+    <TextView
+        android:id="@+id/site_txt_question_desc_9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/txtQuestionMarginLeft"
+        android:text="@string/txt_site_q9"
+        android:layout_centerVertical="true"
+        android:textColor="@android:color/black"
+        android:layout_toLeftOf="@+id/site_rdo_grp_9"
+        android:layout_toRightOf="@+id/site_txt_quest_no_9"/>
+
+    <RadioGroup
+        android:id="@+id/site_rdo_grp_9"
+
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        android:gravity="end"
+        android:layout_marginRight="@dimen/radioGroupMarginRight"
+        android:layout_height="wrap_content">
+
+        <RadioButton android:layout_width="wrap_content"
+            android:id="@+id/site_rdobtn_yes_9" android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="Yes"></RadioButton>
+        <RadioButton android:id="@+id/site_rdobtn_no_9"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="No"></RadioButton>
+    </RadioGroup>
+</RelativeLayout>
+<EditText
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/CommentEditTextMarginTop"
+    android:id="@+id/site_comment_9"
+    android:layout_below="@+id/site_quest_layout_nine"
+    android:hint="Comment"/>
+</LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

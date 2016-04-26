@@ -1,0 +1,135 @@
+﻿<resources>
+    <string name="app_name">TestMultiLang</string>	
+    <string name="airtel_survey">Airtel_Survey</string>
+
+    <!--English sheet strings-->
+    <string name="sheet_title">SHEET ENVIRONMENTAL CONTROL</string>
+    <string name="sheet_site_name">Name of the site</string>
+    <string name="sheet_site_type">Type Site</string>
+    <string name="sheet_environmental_checklist">The environmental checklist (CTF) is a plug that allows to identify the different sites of Airtel Niger anomalies that affect the environment. It allows regular site audits to detect any nonconformities and bring actions both curative and preventive remedial. Technicians performing the regular round of the sites will ensure the collection of all data allowing proper filling of the plug and therefore better operating results.</string>
+
+    <!--French sheet strings-->
+    <string name="sheet_title_fr">FICHE DE CONTRÔLE ENVIRONNEMENTAL</string>
+    <string name="sheet_site_name_fr">Nom du site</string>
+    <string name="sheet_site_type_fr">Type du site</string>
+    <string name="sheet_environmental_checklist_fr">La fiche de contrôle environnemental (FCE) est une fiche qui permet de recenser sur les différents sites d’Airtel Niger les anomalies qui touchent à l’environnement. Elle permet un audit régulier des sites afin de détecter les éventuelles non conformités et apporter des actions à la fois curatives et préventives pour y remédier. Les  techniciens effectuant la ronde régulière des sites veilleront à la collecte de toutes les données permettant un remplissage correct de la fiche et donc une meilleure exploitation des résultats.</string>
+
+    <string name="txt_shelter">Shelter</string>
+    <string name="txt_site">Site</string>
+
+    <!--English form strings heading-->
+    <string name="txt_generator">Generator</string>
+    <string name="txt_emergency">Emergency source of energy</string>
+    <string name="txt_air_conditioner">Air conditioner</string>
+    <string name="txt_tower">Tower</string>
+    <string name="txt_fire">Fire protection equipment</string>
+
+
+    <!--French form strings heading-->
+    <string name="txt_generator_fr">Generateur</string>
+    <string name="txt_emergency_fr">Source d\'énergie de secours</string>
+    <string name="txt_air_conditioner_fr">Climatisation</string>
+    <string name="txt_tower_fr">Tower</string>
+    <string name="txt_fire_fr">Matériel de protection incendie</string>
+
+
+
+    <!-- French form strings shelter-->
+    <string name="txt_shelter_fr_q1">Y\'a-t-il une quelconque anomalies sur le shelter?</string>
+    <string name="txt_shelter_fr_q2">Le sol du contenaire est-il propre? </string>
+
+<!--    French form strings site-->
+    <string name="txt_site_fr_q1">Les lumières marchent-elles toujours? (éclairage)</string>
+    <string name="txt_site_fr_q2">Y\'a-t-il une quelconque anomalies dans le site / des trous?</string>
+    <string name="txt_site_fr_q3">Les dalles et le sol sont -ils stables sur le site?</string>
+    <string name="txt_site_fr_q4">Quel est l\'état de propreté général du site et ses abords?</string>
+    <string name="txt_site_fr_q5">Y\'a-t-il des retouches peinture à faire sur le site?</string>
+    <string name="txt_site_fr_q6">Y\'a-t-il une quelconque anomalie dans la guérite?</string>
+    <string name="txt_site_fr_q7">le système de sécurité sur le site est-il efficace? (serrure, système de cadenas etc.)</string>
+    <string name="txt_site_fr_q8">Y\'a-t-il des problèmes  d\'étanchéité sur le site?</string>
+    <string name="txt_site_fr_q9">Quel est l\'état de la clôture? Présente-t-elle des anomalies?</string>
+
+    <!--    French form strings generator-->
+       <string name="txt_generator_fr_q1">Y a-t-il une fuite d\'huile, des fuites diesel sur / dans le générateur ?</string>
+       <string name="txt_generator_fr_q2">Y\'a-t-il une quelconque anomalie sur le générateur?</string>
+       <string name="txt_generator_fr_q3">Le temps de tournage du générateur est-il surveillé? </string>
+       <string name="txt_generator_fr_q4">Le niveau du diesel est-il vérifié?</string>
+
+
+    <!--French form strings Emergency source of energy-->
+   <string name="txt_emergency_fr_q1">Est-ce que tous les redresseurs fonctionnent correctement? (DC alimentation électrique)</string>
+    <string name="txt_emergency_fr_q2">PSU</string>
+
+    <!--French form strings Air conditioner-->
+        <string name="txt_air_conditioner_fr_q1">Tous les climatiseurs sont-ils en état de marche?</string>
+        <string name="txt_air_conditioner_fr_q2">Y-a-t-il des climatiseurs défectueux?</string>
+
+    <!--French form strings Tower-->
+        <string name="txt_tower_fr_q1">La lumière de navigation marche-t-elle ?</string>
+        <string name="txt_tower_fr_q2">Y a-t-il une anomalie sur la tour ?</string>
+        <string name="txt_tower_fr_q3">Vérifier la fixation de tous les équipements sur la tour</string>
+        <string name="txt_tower_fr_q4">Y\'a-t-il un quelconque dommage  du feeder ?</string>
+
+    <!--French form strings Fire protection equipment-->
+        <string name="txt_fire_fr_q1">Le matériel incendie est-il complet et  installé dans la bonne position?</string>
+
+    <!--   English form strings shelter -->
+    <string name="txt_shelter_q1">There\'s there any abnormalities in the shelter?</string>
+    <string name="txt_shelter_q2">Is the floor of the container clean?</string>
+
+    <!--    English form strings site-->
+    <string name="txt_site_q1">The lights are walking they always? (lighting)</string>
+    <string name="txt_site_q2">There\'s there any anomalies in the site / holes?</string>
+    <string name="txt_site_q3">The tiles and the floor are kindly stable on the site?</string>
+    <string name="txt_site_q4">What is the overall cleanliness of the site and its surroundings?</string>
+    <string name="txt_site_q5">There\'s he paint touches to do on the site?</string>
+    <string name="txt_site_q6">There\'s there any abnormality in the bungalow?</string>
+    <string name="txt_site_q7">the security system on the site is it effective? (Lock, padlock system etc.)</string>
+    <string name="txt_site_q8">There\'s he sealing problems on the site?</string>
+    <string name="txt_site_q9">What is the condition of the fence? She has anomalies?</string>
+
+    <!--    English form strings generator-->
+    <string name="txt_generator_q1">Are there any oil leaks, diesel leaks on / in the generator?</string>
+    <string name="txt_generator_q2">There\'s there any abnormalities on the generator?</string>
+    <string name="txt_generator_q3">Is generator of shooting time monitored?</string>
+    <string name="txt_generator_q4">Is diesel the level checked?</string>
+
+    <!--English form strings Emergency source of energy-->
+    <string name="txt_emergency_q1">Are all rectifiers are working properly? (DC power supply)</string>
+    <string name="txt_emergency_q2">PSU</string>
+
+    <!--English form strings Air conditioner-->
+    <string name="txt_air_conditioner_q1">All air conditioners are they in working order?</string>
+    <string name="txt_air_conditioner_q2">Are there any bad air conditioners?</string>
+
+    <!--English form strings Tower-->
+    <string name="txt_tower_q1">Does walking navigation light?</string>
+    <string name="txt_tower_q2">Are there anomalies in the tower?</string>
+    <string name="txt_tower_q3">Check the fastening of all equipment on the tower</string>
+    <string name="txt_tower_q4">There\'s there any damage from the feeder?</string>
+
+    <!--English form strings Fire protection equipment-->
+    <string name="txt_fire_q1">Is the fire equipment complete and installed in the correct position?</string>
+
+
+   <!-- Integer number Strings-->
+    <string name="one">1.</string>
+    <string name="two">2.</string>
+    <string name="three">3.</string>
+    <string name="four">4.</string>
+    <string name="five">5.</string>
+    <string name="six">6.</string>
+    <string name="seven">7.</string>
+    <string name="eight">8.</string>
+    <string name="nine">9.</string>
+
+    <!--Button titles-->
+    <string name="save">Save</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+
+    <string-array name="array_languages">
+        <item>ENGLISH</item>
+        <item>FRENCH</item>
+    </string-array>
+</resources>
